@@ -1,0 +1,343 @@
+{
+  "id": "d62b3742-6cc4-4d88-a6d1-5c38863ded41",
+  "version": "2.0",
+  "name": "Teste_Carrinho_e_Busca_TJ",
+  "url": "https://tiojoao.com.br/#",
+  "tests": [{
+    "id": "bd3ae001-dee7-4c84-925b-e8c4f757761e",
+    "name": "Pesquisa_Realizada_com_Sucesso",
+    "commands": [{
+      "id": "6c4d541a-6965-42e6-a4e3-eb8ca700e174",
+      "comment": "",
+      "command": "open",
+      "target": "https://tiojoao.com.br/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7af38e77-92ea-4edf-85a5-c116837c52c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "240b5f8c-6ba3-487f-ae09-232e2ca4a909",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-header__main-menu > #menu-item-76 > a",
+      "targets": [
+        ["css=.main-header__main-menu > #menu-item-76 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-76']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6328e71f-23e2-43a6-92a0-40e66bbd0466",
+      "comment": "",
+      "command": "click",
+      "target": "css=.armazem__btn",
+      "targets": [
+        ["css=.armazem__btn", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9736",
+      "windowTimeout": 2000
+    }, {
+      "id": "e382e20d-877a-4122-bbea-706f572cdd30",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9736}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa805a78-b18e-407a-bc5c-ec9e63640fd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchtyped",
+      "targets": [
+        ["id=searchtyped", "id"],
+        ["css=#searchtyped", "css:finder"],
+        ["xpath=//input[@id='searchtyped']", "xpath:attributes"],
+        ["xpath=//form[@id='searchnapcom']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18453f41-0bf6-43fd-b434-fe32007e2176",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchtyped",
+      "targets": [
+        ["id=searchtyped", "id"],
+        ["css=#searchtyped", "css:finder"],
+        ["xpath=//input[@id='searchtyped']", "xpath:attributes"],
+        ["xpath=//form[@id='searchnapcom']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "arroz preto"
+    }, {
+      "id": "fd52db3f-8693-43c5-bd8d-01f3e9907bab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Arroz Preto Tio João Variedades Mundiais 500g",
+      "targets": [
+        ["linkText=Arroz Preto Tio João Variedades Mundiais 500g", "linkText"],
+        ["css=.feature-primary:nth-child(1) .feature__info > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Arroz Preto Tio João Variedades Mundiais 500g')]", "xpath:link"],
+        ["xpath=//div[@id='searchresult']/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.armazemtiojoao.com.br/tio-joao-variedades-mundiais-arroz-preto-500g-44475_pai/p')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Arroz Preto Tio João Variedades Mundiais 500g')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5db48d9-a450-4656-ab76-8308e9813a58",
+    "name": "Pesquisa_Realizada_Inexistente",
+    "commands": [{
+      "id": "ede41c3d-8cf8-4269-9190-af14cd09e968",
+      "comment": "",
+      "command": "open",
+      "target": "https://tiojoao.com.br/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a48eac0-e5c5-4b23-adcc-cb6b25fdd748",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "affb2fc0-d8cd-4dca-832b-81a6cc4e4d9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.armazem__btn",
+      "targets": [
+        ["css=.armazem__btn", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6912",
+      "windowTimeout": 2000
+    }, {
+      "id": "23157fe9-bf16-4f73-99cc-9c706a649c00",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6912}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ba0adc9-7890-4142-87ea-f926c7abf932",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchtyped",
+      "targets": [
+        ["id=searchtyped", "id"],
+        ["css=#searchtyped", "css:finder"],
+        ["xpath=//input[@id='searchtyped']", "xpath:attributes"],
+        ["xpath=//form[@id='searchnapcom']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e54b55f7-d7d9-4f22-a2b3-1e315449c6c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchtyped",
+      "targets": [
+        ["id=searchtyped", "id"],
+        ["css=#searchtyped", "css:finder"],
+        ["xpath=//input[@id='searchtyped']", "xpath:attributes"],
+        ["xpath=//form[@id='searchnapcom']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sanidade mental de quem joga valorant"
+    }, {
+      "id": "87b9c426-4726-42b8-a54f-33de68052c03",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchtyped",
+      "targets": [
+        ["id=searchtyped", "id"],
+        ["css=#searchtyped", "css:finder"],
+        ["xpath=//input[@id='searchtyped']", "xpath:attributes"],
+        ["xpath=//form[@id='searchnapcom']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "cdbc3b08-9931-4097-81a8-b160f548b91e",
+    "name": "Cupom_Desconto",
+    "commands": [{
+      "id": "1df7e6ae-6a18-4bc2-877b-2f14df2858a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://tiojoao.com.br/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff23f43a-4732-4711-9bc1-f644b899ba91",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a2acfbb-6381-49dd-a32c-379c23cdb733",
+      "comment": "",
+      "command": "click",
+      "target": "css=.armazem__btn",
+      "targets": [
+        ["css=.armazem__btn", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8836",
+      "windowTimeout": 2000
+    }, {
+      "id": "f6408947-e2f5-4626-90db-48a9dbb1e332",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8836}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b29bb19-18d4-47ff-a4c4-6082a2763caa",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e32d641-41ec-47c0-9214-2c9f25173e3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact_name",
+      "targets": [
+        ["id=contact_name", "id"],
+        ["name=name", "name"],
+        ["css=#contact_name", "css:finder"],
+        ["xpath=//input[@id='contact_name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab9a2d8-54a3-4694-8911-1318d923c4fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact_name",
+      "targets": [
+        ["id=contact_name", "id"],
+        ["name=name", "name"],
+        ["css=#contact_name", "css:finder"],
+        ["xpath=//input[@id='contact_name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "Joaozinho_da_ZL"
+    }, {
+      "id": "2f79eff0-5f96-47ee-be55-213c3a16b11f",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact_email",
+      "targets": [
+        ["id=contact_email", "id"],
+        ["name=email", "name"],
+        ["css=#contact_email", "css:finder"],
+        ["xpath=//input[@id='contact_email']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df3315e9-adc8-4e65-a44f-0a411dd8b398",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact_email",
+      "targets": [
+        ["id=contact_email", "id"],
+        ["name=email", "name"],
+        ["css=#contact_email", "css:finder"],
+        ["xpath=//input[@id='contact_email']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "joaozinho@arroz.com"
+    }, {
+      "id": "88c6b08a-571b-492b-82fd-92792783038c",
+      "comment": "",
+      "command": "click",
+      "target": "id=estado",
+      "targets": [
+        ["id=estado", "id"],
+        ["name=state", "name"],
+        ["css=#estado", "css:finder"],
+        ["xpath=//select[@id='estado']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef7554b-25c8-440f-a5d8-c235ef205318",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Maranhão"
+    }, {
+      "id": "ccab31fa-96e6-414b-84ca-caee269ec70f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.agree:nth-child(5) > #label_privacy_policy",
+      "targets": [
+        ["css=.agree:nth-child(5) > #label_privacy_policy", "css:finder"],
+        ["xpath=(//label[@id='label_privacy_policy'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[4]/label", "xpath:idRelative"],
+        ["xpath=//p[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b95deb9-c4f7-41f6-b0e8-22d85dd3bdb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact_submit",
+      "targets": [
+        ["id=contact_submit", "id"],
+        ["css=#contact_submit", "css:finder"],
+        ["xpath=//input[@id='contact_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact-form']/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f870788c-878d-422f-9245-251ab6b931cc",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Cadastro realizado com sucesso!!!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c3c6d305-7ef0-45e5-bfe1-33161ba6b40a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://tiojoao.com.br/#"],
+  "plugins": []
+}
